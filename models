@@ -1,0 +1,22 @@
+models
+
+使用するDB : mysql
+
+・ユーザー系
+	・user mail:string password:string name:string belongs:string
+
+・会社情報系
+	・company_group company_type:integer company_name:string tel:integer postal_code:string address:string president:string establishment:string fund:string description:text link:string
+	・company company_type:integer company_name:string tel:integer postal_code:string address:string president:string establishment:string fund:string description:text link:string
+	・company_hub company_group_id:integer company_id:integer
+
+・記事系
+	・article title:string summary:text author_type:integer author_id:integer
+	・news title:string summary:text author_type:integer author_id:integer
+	・paragraph content_type:integer content_id:integer title:string content:text paragraph_type:integer 
+	・image content_type:integer content_id:integer image:string
+	・movie content_type:integer content_id:integer image:string
+	・category name:string
+	・tag name:string
+	・category_hub category_id:integer content_type:integer content_id:integer
+	・tag_hub tag_id:integer content_type:integer content_id:integer
