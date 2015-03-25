@@ -1,0 +1,36 @@
+about_gem
+
+gemについて
+
+・そもそもgemfileとは？
+gemfileとはrubyのpluginと思ってくれて大丈夫です。
+pluginとは簡単に説明すると、コーディングでごりごりかかないとできないことを関数化してくれている便利なものというふうに思ってくれて構いません。
+
+・今回使用するgemfile
+	・gem 'rails', '4.1.1'
+		これは今回の開発環境の基盤となっているrailsのgem。あくまで、rubyで書かれたコードをwebに表示するためにいろいろと活躍してくれるもの。
+		versionは4.1.1とあるが、これは比較的新しい（2014/5月くらいから4.x.x系が出始めた）ため、3.x.x系に比べるとweb上に落ちている資料が少ない。
+		しかも3.x.x系から大きく変更してある部分も多々あるため、がんばりましょう。
+	・gem 'mysql2'
+		これはdatabase用のgem。database用のgemは他にもsqlite3やmongoDBなど様々だが、管理のしやすさ的にはmysqlが一番。ただ、ぶっちゃけどのdatabaseでも大丈夫
+	・gem 'sass-rails', '~> 4.0.3'
+		これはwebサイトのデザインを司るcssを生成するsassという言語を使用するためのgem。railsではdefalutで入ってる。sassを理解するとちょー便利。
+	・gem 'uglifier', '>= 1.3.0'
+		これはwebサイトの動的な表現を司るjavascriptを使用するためのgem。ぶっちゃけなくても動くっちゃ動くけど、これにまとめた方がseo的にも綺麗。
+	・gem 'coffee-rails', '~> 4.0.0'
+		現在は無視してよろしい。
+	・gem 'jquery-rails'
+		上記したjavascriptの拡張言語jqueryを使用するためのgem。基本的に、javascriptではなく、jqueryを使用するので、大事。
+	・gem 'turbolinks'
+		ちょっと説明がややこしいんで、今度まとめます。ただ、結構大事。
+	・gem 'jbuilder', '~> 2.0'
+		知らんがdefault
+	・gem 'sdoc', '~> 0.4.0'
+		知らんがdefault
+	・gem 'spring'
+		説明を読む限り、手元で製作（development環境）の際に起動を早くしてくれるらしい。default
+	・gem "devise"
+		ユーザー認証用のgem。会員登録とかメール送信とかいろいろやってくれる。ただ結構カスタマイズが必要。
+	・gem "paperclip"
+		画像アップロード用のgem。このgemを使用するためにはパソコンにimage-magicというアプリケーションを入れないといけない。
+
